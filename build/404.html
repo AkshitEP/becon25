@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4C4P209W9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-S4C4P209W9');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BECon | 404</title>
+<link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+
+<body x-data="{ page: '404', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
+  <!-- ===== Header Start ===== -->
+  <header class="fixed left-0 top-0 w-full z-9999 py-7 lg:py-0"
+  :class="{ 'bg-dark/70 backdrop-blur-lg shadow !py-4 lg:!py-0 transition duration-100 before:absolute before:w-full before:h-[1px] before:bottom-0 before:left-0 before:features-row-border' : stickyMenu }"
+  @scroll.window="stickyMenu = (window.scrollY > 0) ? true : false">
+  <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 lg:flex items-center justify-between relative">
+    <div class="w-full lg:w-1/12 lg:mr-20 flex items-center justify-between">
+      <button onclick="routerRedirect('index.html')">
+        <img  src="images/BeconLogo1.svg" alt="Logo" class="max-h-16" />
+      </button>
+
+      <!-- Hamburger Toggle BTN -->
+      <button class="lg:hidden block" @click="navigationOpen = !navigationOpen">
+        <span class="block relative cursor-pointer w-5.5 h-5.5">
+          <span class="du-block absolute right-0 w-full h-full">
+            <span
+              class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-[0]"
+              :class="{ '!w-full delay-300': !navigationOpen }"></span>
+            <span
+              class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-150"
+              :class="{ '!w-full delay-400': !navigationOpen }"></span>
+            <span
+              class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-200"
+              :class="{ '!w-full delay-500': !navigationOpen }"></span>
+          </span>
+          <span class="du-block absolute right-0 w-full h-full rotate-45">
+            <span
+              class="block bg-white rounded-sm ease-in-out duration-200 delay-300 absolute left-2.5 top-0 w-0.5 h-full"
+              :class="{ '!h-0 delay-[0]': !navigationOpen }"></span>
+            <span
+              class="block bg-white rounded-sm ease-in-out duration-200 delay-400 absolute left-0 top-2.5 w-full h-0.5"
+              :class="{ '!h-0 dealy-200': !navigationOpen }"></span>
+          </span>
+        </span>
+      </button>
+      <!-- Hamburger Toggle BTN -->
+    </div>
+
+    <div class="w-full lg:w-11/12 h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between"
+      :class="{ '!visible bg-dark shadow-lgrelative !h-auto max-h-[600px] overflow-y-scroll rounded-md mt-4 p-7.5': navigationOpen }">
+      <nav>
+        <ul class="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-0">
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <button onclick="routerRedirect('index.html#home')"
+              @click="navigationOpen = false"
+              class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+              Home
+            </button>
+          </li>
+
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+      
+            <button onclick="routerRedirect('index.html#aboutus')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            About
+          </button>
+          </li>
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <!-- <button onclick="routerRedirect('index.html#custom1')"
+            @click="navigationOpen = false"
+            class="relative text-white/80 text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Glimplse of last year
+          </button> -->
+           
+            <!-- <button onclick="routerRedirect('event.html')"
+              @click="navigationOpen = false"
+              class="relative text-white/80 text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+              Past Events
+            </button> -->
+          <!-- </li> -->
+
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <button onclick="routerRedirect('speaker.html')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Past speakers
+          </button>
+
+           
+      
+          </li>
+          <!-- <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <button onclick="routerRedirect('index.html#sponsors')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Expositions
+          </button>
+          </li> -->
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+      
+            <button onclick="routerRedirect('index.html#events')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Past Events
+          </button>
+          </li>
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <button onclick="routerRedirect('sponsor.html')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Past sponsors
+          </button>
+          </li>
+
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <button onclick="routerRedirect('moonshot.html')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Moonshot
+          </button>
+          </li>
+
+
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <button onclick="routerRedirect('blueprint.html')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Blueprint
+          </button>
+          </li>
+          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+            <button onclick="routerRedirect('startup_clinic.html')"
+            @click="navigationOpen = false"
+            class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
+            Startup Clinic
+          </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="items-center gap-6 mt-7 lg:mt-0" id="loginButtonShow">
+        <button onclick="routerRedirect('login.html')" class="text-white text-sm hover:text-opacity-75">
+          Login
+        </button>
+
+        <button onclick="routerRedirect('register.html')"
+            class="button-border-gradient relative rounded-lg text-green-500 text-sm flex items-center gap-1.5 py-2 px-4.5  hover:button-gradient-hover hover:shadow-none">
+          Register
+
+          <svg class="mt-0.5" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.4002 7.60002L9.2252 2.35002C9.0002 2.12502 8.6502 2.12502 8.4252 2.35002C8.2002 2.57502 8.2002 2.92502 8.4252 3.15002L12.6252 7.42502H2.0002C1.7002 7.42502 1.4502 7.67502 1.4502 7.97502C1.4502 8.27502 1.7002 8.55003 2.0002 8.55003H12.6752L8.4252 12.875C8.2002 13.1 8.2002 13.45 8.4252 13.675C8.5252 13.775 8.6752 13.825 8.8252 13.825C8.9752 13.825 9.1252 13.775 9.2252 13.65L14.4002 8.40002C14.6252 8.17502 14.6252 7.82503 14.4002 7.60002Z"
+              fill="" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-7 lg:mt-0" id="logoutButtonShow">
+        <button onclick="logout()"
+          class="button-border-gradient relative rounded-lg text-sky-300 text-sm flex items-center gap-1.5 py-2 px-4.5 shadow-button hover:button-gradient-hover hover:shadow-none">
+          Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- ===== Header End ===== -->
+
+  <main>
+    <!-- ===== Breadcrumb Section Start ===== -->
+    <section class="relative z-10 pt-30 lg:pt-35 xl:pt-40 pb-18">
+      <!-- bg shapes -->
+      <div class="absolute top-25 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
+        <div class="w-full h-[1.24px] footer-bg-gradient"></div>
+        <div class="w-full h-[2.47px] footer-bg-gradient"></div>
+        <div class="w-full h-[3.71px] footer-bg-gradient"></div>
+        <div class="w-full h-[4.99px] footer-bg-gradient"></div>
+        <div class="w-full h-[6.19px] footer-bg-gradient"></div>
+        <div class="w-full h-[7.42px] footer-bg-gradient"></div>
+        <div class="w-full h-[8.66px] footer-bg-gradient"></div>
+        <div class="w-full h-[9.90px] footer-bg-gradient"></div>
+        <div class="w-full h-[13px] footer-bg-gradient"></div>
+      </div>
+      <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-dark/0 to-dark -z-1">
+      </div>
+
+    </section>
+    <!-- ===== Breadcrumb Section End ===== -->
+
+    <!-- ===== 404 Start ===== -->
+    <section class="pb-20 lg:pb-25 xl:pb-30 2xl:pb-[150px]">
+      <div class="wow fadeInUp mx-auto w-full max-w-[597px] text-center px-4 sm:px-8 lg:px-0" data-wow-delay="0.1s">
+        <h2 class="mb-5.5 text-heading-3 font-bold text-white">
+          Oops! Page Not Found.
+        </h2>
+        <p class="font-medium mb-9">
+          The page you are looking for is not available or has been moved. Try
+          a different page or go to homepage with the button below.
+        </p>
+        <button onclick="routerRedirect('index.html')"
+          class="bg-gradient-to-b from-sky-400 to-sky-700 inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80">
+          Go To Home
+        </button>
+      </div>
+    </section>
+    <!-- ===== 404 End ===== -->
+  </main>
+  <!-- ===== Footer Start ===== -->
+  <!-- ====== Footer Section Start -->
+<footer class="relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5">
+  <!-- bg shapes -->
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+
+    <img class="w-screen h-screen object-cover" src="images/footer1.jpeg" alt="">
+  </div>
+
+
+  <div class="absolute inset-0 z-5 h-[110%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 11, 27, 0.48) 0%, rgba(0, 11, 27, 0.9) 58%, rgba(0, 11, 27, 0.992) 74%, rgba(0, 11, 27, 1) 100%);"></div>
+
+
+  <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 relative pt-17.5">
+    <div class="w-full h-[1px] footer-divider-gradient absolute top-0 left-0"></div>
+
+    <div class="flex flex-wrap justify-between">
+      <div class="mb-10 max-w-[571px] w-full">
+        <button class="mb-8.5 inline-block" onclick="routerRedirect('index.html')">
+          <img loading="lazy" src="images/BeconLogo1.svg" alt="Logo" class="max-h-20" />
+        </button>
+
+        <p class="mb-6 md:mb-12 xl:w-4/5">
+          eDC IIT Delhi's Business & Entrepreneurship Conclave with 50+ events spread across 2 days is one of the
+          biggest E-summit of India.
+        </p>
+
+      </div>
+
+      <div>
+        <p class="mb-6 xl:w-4/5">
+          To stay updated, follow us on social media platforms!
+        </p>
+        <div class="flex items-center gap-5">
+          <a href="https://twitter.com/edciitdelhi" target="_blank" class="hover:text-white ease-in duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/edciitdelhi/posts" target="_blank" class="hover:text-white ease-in duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/edc_iitd/?hl=en" target="_blank" class="hover:text-white ease-in duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <a href="https://in.linkedin.com/company/edc-iit-delhi" target="_blank" class="hover:text-white ease-in duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+            </svg>
+          </a>
+
+        </div>
+
+        <p class="font-medium mt-6 md:mt-16">
+          For any query contact us at <a class="text-green-600" href="mailto:becon@edciitd.com" target="_blank">becon@edciitd.com</a>
+        </p>
+
+      </div>
+    </div>
+    <p class="font-medium mt-12 md:mt-6 md:text-center">
+      © Copyright eDC IIT Delhi. All rights reserved.
+    </p>
+  </div>
+</footer>
+<!-- ====== Footer Section End -->
+  <!-- ===== Footer End ===== -->
+
+  <!-- ====== Back To Top Start ===== -->
+  <button
+  class="hidden items-center justify-center w-10 h-10 rounded-[4px] shadow-solid-5 bg-gradient-to-b from-sky-400 to-sky-700 hover:opacity-70 fixed bottom-8 right-8 z-999"
+  @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+  @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false" :class="{ '!flex' : scrollTop }">
+  <svg class="fill-white w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path
+      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+  </svg>
+</button>
+  <!-- ====== Back To Top End ===== -->
+
+  <!-- Javascripts files start -->
+  <script src="images/loginLogout.js"></script>
+  <script src="images/routerRedirect.js"></script>
+  <!-- Javscript files end -->
+<script defer src="bundle.js"></script></body>
+
+</html>

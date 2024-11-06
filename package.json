@@ -2,7 +2,7 @@
   "name": "becon-iitd",
   "version": "1.0.0",
   "description": "BECON'24, the flagship Annual Business and Entrepreneurship Conclave at IIT Delhi, asserts its prominence with the 2024 edition on February 3rd and 4th. Anticipating a staggering footfall of 1 lakh+ attendees, BECON serves as India's foremost entrepreneurship conference, creating a dynamic platform for the exchange of ideas among business experts, entrepreneurs, and change-makers.",
-  "homepage": "https://akshitep.github.io/Becon-final-2025",
+  "homepage": "https://AkshitEP.github.io/becon25",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --config webpack.config.js",
