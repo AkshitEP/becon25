@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4C4P209W9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-S4C4P209W9');
+  </script>
+   <style> 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #e6e1c5;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: -18px;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: 544px;
+  background:	#000000;
+  border: 2px solid #e6e1c5;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e6e1c5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: 470px;
+}
+
+.container.right .date {
+  left: -85px;
+  
+}
+
+
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: #e6e1c5;
+  position: relative;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5d5d5d;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 42px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 40px;
+    border-color: transparent #e6e1c5 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+ .container1{
+    width: 90%;
+    height: 100%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 60px;
+    
+}
+.contentLeft,
+.contentRight{
+    width: 100%;
+}
+.contentLeft .row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.contentLeft .row .imgWrapper{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+}
+.contentLeft .row .imgWrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    transition: 0.3s ease;
+}
+
+.contentLeft .row .imgWrapper:nth-child(odd){
+    transform: translateY(-20px);
+}
+.contentLeft .row .imgWrapper:nth-child(even){
+    transform: translateY(20px);
+}
+.contentRight .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.contentRight .content h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: #d35400;
+}
+.contentRight .content h2{
+    font-size: 40px;
+    color: #e6e1c5;
+    font-weight: 700;
+}
+.contentRight .content p{
+    font-size: 16px;
+    color: #636363;
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+.contentRight .content a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 13px 30px;
+    color: #fff;
+    background: #d3540000;
+    border-radius: 8px;
+    user-select: none;
+}
+@media(max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .contentLeft .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contentLeft .row .imgWrapper{
+        height: 150px;
+    }
+    .contentRight .content h4{
+        font-size: 18px;
+    }
+    .contentRight .content h2{
+        font-size: 30px;
+    }
+}
+    .body {
+      background-color : black
+    }
+    /* Default background image for larger screens */
+
+/* Media query for phone-sized screens */
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.grid-container {
+  margin: auto;
+  max-width: 600px;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+
+
+.collage1 .item {
+  border: 5px solid #e6e1c5;
+}
+
+
+.collage2 .item {
+  border: 5px solid black;
+}
+
+.item {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px 0px;
+}
+
+.item1 {
+  z-index: 10;
+  grid-area: 1/6/5/10;
+}
+.item2 {
+  z-index: 6;
+  grid-area: 5/1/11/7;
+}
+.item3 {
+  z-index: 5;
+  grid-area: 4/6/11/13;
+}
+.item4 {
+  grid-area: 2/-1/8/-7;
+}
+.item5 {
+  z-index: 10;
+  grid-area: 7/-3/10/-6;
+}
+.item6 {
+  z-index: 6;
+  grid-area: -1/3/-9/11;
+}
+.item7 {
+  z-index: 6;
+  grid-area: -3/-2/-9/-8;
+}
+
+.grid-container > * {
+  transition: all 0.5s;
+}
+.grid-container > *:hover {
+  z-index: 99;
+  transform: scale(1.3);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BECON'24, the flagship Annual Business and Entrepreneurship Conclave at IIT Delhi,
+  asserts its prominence with the 2024 edition on February 3rd and 4th.
+  Anticipating a staggering footfall of 1 lakh+ attendees, BECON serves as India's
+  foremost entrepreneurship conference, creating a dynamic platform for the exchange
+  of ideas among business experts, entrepreneurs, and change-makers." />
+  <meta name="keywords"
+    content="Becon, eDC, IIT Delhi, Entrepreneurship Development Cell, IIT , IITD, Entrepreneurship, Entrepreneur,BECON,Business,ESummit,startups,startups Delhi,Delhi startups,Startups in Delhi" />
+  <title>Moonshot</title>
+</head>
+
+
+
+<body x-data="{ page: 'signin', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
+  <!-- ===== Header Start ===== -->
+  <include src="./partials/header.html" />
+  <!-- ===== Header End ===== -->
+
+  <main>
+
+    <!-- ===== Breadcrumb Section End ===== -->
+
+
+    <section class="wow fadeInUp relative overflow-hidden ">
+      <div class="w-full mx-auto  ">
+
+          <div class="relative rounded-3xl z-999">
+
+
+
+              <img loading="lazy" src="./images/blueprint/blueprint_mainpage.png" alt="video" />
+          </div>
+      </div>
+  </section>
+
+
+
+
+    <!-- ===== Speakers Section Start ===== -->
+    <section id="features" class="wow fadeInUp relative overflow-hidden md:pb-30 lg:pb-20  z-999 bg-black lg:pt-17.5 xl:pt-22.5">
+      <div class="absolute top-0 -z-1  w-[100%] h-[250%] overflow-hidden">
+        <img class="w-screen  h-screen object-cover" src="./images/blueprint/blueprint_bg.jpg" alt="">
+      </div>
+    
+            <div class="absolute inset-0 z-5 h-[110%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 0, 0, 0.573) 0%, rgba(0, 0, 0, 0.696) 58%, rgba(0, 0, 0, 0.785) 74%, rgba(0, 0, 0, 0.813) 100%);"></div>
+    
+
+
+      <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
+        <!-- bg circles -->
+        <div class="relative top-18">
+          <div class="absolute z-0 pointer-events-none inset-0 overflow-hidden -my-55">
+            <div class="absolute left-1/2 -translate-x-1/2 top-0">
+              <img loading="lazy" src="./images/blueprint/blur-13_moon4.svg" alt="blur" class="max-w-none" />
+            </div>
+            <div class="absolute left-1/2 -translate-x-1/2 top-0">
+              <img loading="lazy" src="./images/blueprint/blur-14moon4.svg" alt="blur" class="max-w-none" />
+            </div>
+            <div class="absolute left-1/2 -translate-x-1/2 top-0">
+              <img loading="lazy" src="./images/blueprint/blur-15moon4.svg" alt="blur" class="max-w-none" />
+            </div>
+          </div>
+          <div
+            class="max-w-[830px] w-full h-[830px] rounded-full bg-[#ffc438] absolute left-1/2 -translate-x-1/2 top-0 pricing-circle">
+          </div>
+
+          <div class="max-w-[482px] w-full h-40 overflow-hidden absolute -z-1 -top-30 left-1/2 -translate-x-1/2">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+          </div>
+        </div>
+
+        <!-- grid row -->
+        <div class="flex justify-center gap-7.5 relative -z-1">
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+        </div>
+
+        <!-- section title -->
+        <div class="wow fadeInUp mb-17.5 -mt-24 text-center z-10 relative">
+          <h2 class="text-black text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
+            ACHIEVEMENTS
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5">
+
+          <div class="swiper-slide  !w-auto">
+            <a  style="background: radial-gradient(circle at -30% 140%, rgb(219, 219, 219) 0%, rgb(0, 0, 0) 47%, rgb(0, 0, 0) 88%);" class="overflow-hidden relative rounded-lg h-50 w-200 p-2 flex    z-999"
+              target="_blank">
+              <h3 class="font-semibold text-heading-6 text-white mt-10 ml-7 mb-5.5">
+                Funding Raised
+              </h3>
+  
+              <div class="flex items-center gap-3.5">
+                <h2 class="font-bold text-custom-1 -ml-45 mt-10 text-sky-300">1 Cr+</h2>
+              </div>
+              <!-- bg shapes -->
+              <span class="absolute bottom-0 left-0 -z-1"><img loading="lazy" src="./images/cta/grid.svg"
+                  alt="grid" /></span>
+                  <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-222a.svg" alt="blur" class="max-w-none" />
+                    </span>
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-233b.svg" alt="blur" class="max-w-none" />
+                    </span>
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-244c.svg" alt="blur" class="max-w-none" />
+                    </span>
+                  </div>
+
+              <!-- stars -->
+              <div
+                class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
+                <div class="stars"></div>
+                <div class="stars2"></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Pricing item -->
+          <!-- <div
+            class="rounded-3xl  relative z-20 overflow-hidden pt-12.5 pb-10 px-8 xl:px-10 pricing-item-border">
+            <h3 class="font-semibold text-heading-6 text-white mb-5.5">
+              Startups
+            </h3>
+
+            <div class="flex items-center gap-3.5">
+              <h2 class="font-bold text-custom-1 text-sky-300">500+</h2>
+            </div>
+
+         
+            <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+              <span class="absolute left-0 bottom-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-16.svg" alt="blur" class="w-full" />
+              </span>
+              <span class="absolute left-0 top-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-17.svg" alt="blur" class="w-full" />
+              </span>
+            </div>
+          </div> -->
+          <div class="swiper-slide !w-auto">
+            <a  style="background: radial-gradient(circle at -30% 140%, rgb(219, 219, 219) 0%, rgb(0, 0, 0) 47%, rgb(0, 0, 0) 88%);" class="overflow-hidden relative rounded-lg h-50 w-200 p-2 flex    z-999"
+              target="_blank">
+              <h3 class="font-semibold text-heading-6 text-white mt-10 ml-7 mb-5.5">
+                Startups Presented
+              </h3>
+  
+              <div class="flex items-center gap-3.5">
+                <h2 class="font-bold text-custom-1 -ml-55 mt-10 text-sky-300">150+</h2>
+              </div>
+              <!-- bg shapes -->
+              <span class="absolute bottom-0 left-0 -z-1"><img loading="lazy" src="./images/cta/grid.svg"
+                  alt="grid" /></span>
+                  <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-222a.svg" alt="blur" class="max-w-none" />
+                    </span>
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-233b.svg" alt="blur" class="max-w-none" />
+                    </span>
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-244c.svg" alt="blur" class="max-w-none" />
+                    </span>
+                  </div>
+
+              <!-- stars -->
+              <div
+                class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
+                <div class="stars"></div>
+                <div class="stars2"></div>
+              </div>
+            </a>
+          </div>
+          <!-- Pricing item -->
+          <!-- <div
+             style="opacity: 100%;"  class=" rounded-3xl  relative z-20 overflow-hidden pt-12.5 pb-10 px-8 xl:px-10 pricing-item-border">
+            <h3 class="font-semibold text-heading-6 text-white mb-5.5">
+              Events
+            </h3>
+
+            <div class="flex items-center gap-3.5">
+              <h2 class="font-bold text-custom-1 text-sky-300">30+</h2>
+            </div>
+
+        
+            <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+              <span class="absolute left-0 bottom-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-16.svg" alt="blur" class="w-full" />
+              </span>
+              <span class="absolute left-0 top-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-17.svg" alt="blur" class="w-full" />
+              </span>
+            </div>
+          </div> -->
+          <div class="swiper-slide !w-auto ">
+            <a  style="background: radial-gradient(circle at -30% 140%, rgb(219, 219, 219) 0%, rgb(0, 0, 0) 47%, rgb(0, 0, 0) 88%);" class="overflow-hidden relative rounded-lg h-50 w-200 p-2 flex    z-999"
+              target="_blank">
+              <h3 class="font-semibold text-heading-6 text-white mt-10 ml-7 mb-5.5">
+                Investors
+              </h3>
+  
+              <div class="flex items-center gap-3.5">
+                <h2 class="font-bold text-custom-1 -ml-27 mt-10 text-sky-300">100</h2>
+              </div>
+              <!-- bg shapes -->
+              <span class="absolute bottom-0 left-0 -z-1"><img loading="lazy" src="./images/cta/grid.svg"
+                  alt="grid" /></span>
+                  <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-222a.svg" alt="blur" class="max-w-none" />
+                    </span>
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-233b.svg" alt="blur" class="max-w-none" />
+                    </span>
+                    <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                      <img loading="lazy" src="./images/blueprint/blur-244c.svg" alt="blur" class="max-w-none" />
+                    </span>
+                  </div>
+
+              <!-- stars -->
+              <div
+                class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
+                <div class="stars"></div>
+                <div class="stars2"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<section class="wow fadeInUp relative overflow-hidden md:pb-30 lg:pb-20 sm:pb-100 z-999 bg-black lg:pt-17.5 xl:pt-22.5 lg:pb-17.5 xl:pb-22.5">
+  <div class="absolute top-0   w-[100%] h-[250%] overflow-hidden">
+    <img class="w-screen  h-screen object-cover" src="./images/blueprint/blueprint_bg.jpg" alt="">
+  </div>
+
+        <div class="absolute inset-0 z-5 h-[110%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 0, 0, 0.573) 0%, rgba(0, 0, 0, 0.696) 58%, rgba(0, 0, 0, 0.785) 74%, rgba(0, 0, 0, 0.813) 100%);"></div>
+
+  <div class="container1 mx-auto">
+    <div class="contentLeft">
+      <div class="row">
+          <div class="imgWrapper">
+              <img src="./images/blueprint1/blueprint/blueprint-15.jpg" alt="">
+          </div>
+          <div class="imgWrapper">
+              <img src="./images/blueprint1/blueprint/blueprint-2.jpg" alt="">
+          </div>
+          <div class="imgWrapper">
+              <img src="./images/blueprint1/blueprint/blueprint-3.jpg" alt="">
+          </div>
+          <div class="imgWrapper">
+              <img src="./images/blueprint1/blueprint/blueprint-4.jpg" alt="">
+          </div>
+      </div>
+    </div>
+    <div class="contentRight md:pb-30   lg:pb-65 sm:pb-100">
+      <div class="content ">
+       
+        <h2 style="color: #12f1ff;">ABOUT BLUEPRINT</h2>
+        <p class="text-justify">Welcome to IIT Delhi’s Entrepreneurship Cell flagship Business Plan Competition 2025! This competition is a platform for budding entrepreneurs to showcase their innovative ideas, business acumen, and strategic thinking with four exciting tracks and competitions in three major cities: Delhi, Mumbai, Ahmedabad and Hyderabad. Blueprint promises to be a melting pot of creativity, innovation, and business brilliance.
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wow fadeInUp relative overflow-hidden  ">
+  <div class="w-full mx-auto  ">
+
+      <div class="relative rounded-3xl z-999">
+
+
+
+          <img loading="lazy" src="./images/blueprint/another.jpg" alt="video" />
+      </div>
+  </div>
+</section>
+
+
+
+
+<section class="wow fadeInUp relative overflow-hidden md:pb-30 lg:pb-20 sm:pb-100 z-999 bg-black ">
+  <div class="absolute top-0   w-[100%] h-[250%] overflow-hidden">
+    <img class="w-screen  h-screen object-cover" src="./images/blueprint/blueprint_bg.jpg" alt="">
+  </div>
+
+        <div class="absolute inset-0 z-5 h-[110%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 0, 0, 0.573) 0%, rgba(0, 0, 0, 0.696) 58%, rgba(0, 0, 0, 0.785) 74%, rgba(0, 0, 0, 0.813) 100%);"></div>
+
+        <div class="wow fadeInUp mt-25 mb-17.5 text-center mx-auto flex justify-center items-center">
+          <object type="image/svg+xml" data="./images/templates/Group 29269.svg" class="w-1/2 h-auto md:w-1/4 lg:w-1/3 mx-auto md:mt-4">
+            Your browser does not support SVGs
+          </object>
+        </div>
+        
+
+  
+  <div class="timeline">
+    <div class="container left">
+      <div class="date">Track 1</div>
+
+      <div class="content">
+        <h2>Sustainability, Energy & Enviroment</h2>
+        <p>
+          Examples: Clean energy solutions, waste management, sustainable agriculture, climate tech, eco-friendly products.
+        </p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="date">Track 2</div>
+
+      <div class="content">
+        <h2>Fintech,Bussiness & 
+          Consumer services</h2>
+        <p class="text-justify">
+          Examples: Payment gateways, blockchain, B2B SaaS, e-commerce, marketing platforms, consumer apps        </p>
+      </div>
+    </div>
+    
+    <div class="container left">
+      <div class="date">Track 3</div>
+
+      <div class="content">
+        <h2>Health,Education & Social Impact</h2>
+        <p>
+          Examples: Healthcare technology, biotech, medtech, edtech, mental health platforms, social impact enterprises.
+        </p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="date ">Track 4</div>
+      
+      <div class="content">
+        <h2>Deep Tech , AI & Emerging Technologies</h2>
+        <p class="text-justify">
+          Examples: Artificial Intelligence, Machine Learning, Quantum Computing, Web3, IoT, robotics
+        </p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+
+<section class="wow fadeInUp relative overflow-hidden ">
+  <div class="w-full mx-auto  ">
+
+      <div class="relative rounded-3xl z-999">
+
+
+
+          <img loading="lazy" src="./images/moonshot/moonshot13.jpg" alt="video" />
+      </div>
+  </div>
+</section>
+
+
+
+
+<section class="lg:pb-20">
+
+  <div class="absolute top-0   w-[100%] h-full overflow-hidden">
+    <img class="w-screen  h-screen object-cover" src="./images/blueprint/blueprint_bg.jpg" alt="">
+  </div>
+        <div class="absolute inset-0 z-5 h-[110%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 0, 0, 0.573) 0%, rgba(0, 0, 0, 0.696) 58%, rgba(0, 0, 0, 0.785) 74%, rgba(0, 0, 0, 0.813) 100%);"></div>
+   
+  <div class="container collage1">
+    <div class="wow fadeInUp mb-17.5 text-center">
+      <object type="image/svg+xml" data="./images/Templates/Group 29270.svg" class=" m-auto  w-1/2 h-auto md:w-1/4 lg:w-1/3 md:mt-4 ">
+        Your browser does not support SVGs
+    </object>
+    </div>
+    <div class="grid-container">
+      <div class="item item1">
+        <img src="./images/blueprint1/blueprint/blueprint-1.jpg" alt="image">
+      </div>
+      <div class="item item2">
+        <img src="./images/blueprint1/blueprint/blueprint-5.jpg" alt="image">
+      </div>
+      <div class="item item3">
+        <img src="./images/blueprint1/blueprint/blueprint-6.jpg" alt="image">
+      </div>
+      <div class="item item4">
+        <img src="./images/blueprint1/blueprint/blueprint-7.jpg" alt="image">
+      </div>
+      <div class="item item5">
+        <img src="./images/blueprint1/blueprint/blueprint-8.jpg" alt="image">
+      </div>
+      <div class="item item6">
+        <img src="./images/blueprint1/blueprint/blueprint-9.jpg" alt="image">
+      </div>
+      <div class="item item7">
+        <img src="./images/blueprint1/blueprint/blueprint-10.jpg" alt="image">
+      </div>
+    </div>
+  </div>
+  
+
+</section>
+
+
+    <!-- ===== Speakers Section End ===== -->
+
+  </main>
+  <!-- ===== Footer Start ===== -->
+
+
+  <!-- ====== Back To Top Start ===== -->
+  <include src="./partials/scrolltop.html" />
+  <!-- ====== Back To Top End ===== -->
+
+  <!-- Javascripts files start -->
+  <script src="./js/loginLogout.js"></script>
+  <script src="./js/routerRedirect.js"></script>
+  <!-- Javscript files end -->
+</body>
+
+</html>

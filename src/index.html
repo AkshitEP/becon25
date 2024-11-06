@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4C4P209W9"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Ensure jQuery is loaded -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-S4C4P209W9");
+  </script>
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BECON'24, the flagship Annual Business and Entrepreneurship Conclave at IIT Delhi,
+  asserts its prominence with the 2024 edition on February 3rd and 4th.
+  Anticipating a staggering footfall of 1 lakh+ attendees, BECON serves as India's
+  foremost entrepreneurship conference, creating a dynamic platform for the exchange
+  of ideas among business experts, entrepreneurs, and change-makers." />
+  <meta name="keywords"
+    content="Becon, eDC, IIT Delhi, Entrepreneurship Development Cell, IIT , IITD, Entrepreneurship, Entrepreneur,BECON,Business,ESummit,startups,startups Delhi,Delhi startups,Startups in Delhi" />
+  <title>BECon | eDC IIT Delhi</title>
+
+
+  <style>
+  
+ 
+
+
+
+  
+  canvas { display: block; }
+
+.section-cards .section-content {
+  padding-bottom: 22px;
+  padding-top: 140px;
+  text-align: center;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+    height: 800px;
+    position: sticky;
+    top: calc(50vh + 52px - 215px - 40px);
+    .card-container {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 750px;
+      height: 530px;
+      margin-left: -375px;
+      transform: translateZ(0);
+    }
+    .card-container {
+      width: 825px;
+      height: 200px;
+      margin-left: -412.5px;
+    }
+    .bg {
+      z-index: 1;
+      background-color: #fff;
+    }
+    .card {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 2;
+      background-repeat: no-repeat;
+      transform-origin: top center;
+      background-position: center center;
+      box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+    }
+    &.card-01 .card {
+      background: linear-gradient(-40deg, #d754ad 0%, #f96785 67%, #fe7333 100%);
+    }
+    &.card-02 .card {
+      background: linear-gradient(-40deg, #af4fec 0%, #d753ad 70%, #eb6078 100%);
+    }
+    &.card-03 .card {
+      background: linear-gradient(-40deg, #6c6ff0 0%, #a354e4 58%, #c65cae 100%);
+    }
+    &.card-04 .card {
+      background: linear-gradient(-40deg, #56acef 0%, #6c6ff0 50%, #9755e7 100%);
+    }
+    &.card-05 .card {
+      background: linear-gradient(-40deg, #9adee6 0%, #00a9ff 25%, #3663cc 100%);
+    }
+  }
+}
+
+
+  </style>
+
+</head>
+
+<body x-data="{ page: 'home', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
+  <!-- ===== Header Start ===== -->
+  <include src="./partials/header.html" />
+  <!-- ===== Header End ===== -->
+
+
+
+
+  <main>
+    <!-- ===== Hero Section Start ===== -->
+    <!-- <section id="home " class="h-screen md:h-screen sm:h-[100vh]">
+
+   
+
+      <video autoplay muted loop playsinline class="absolute  w-[80%] translate-x-1/4   object-cover ">
+        <source src="./images/logo/backvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    
+      <div class="absolute inset-0 z-5 h-[110%] " style="background: radial-gradient(circle at 65% 40%, rgba(0, 11, 27, 0.48) 0%, rgb(0, 11, 27) 58%, rgb(0, 11, 27) 74%, rgba(0, 11, 27, 1) 100%);"></div>
+    
+      <div class=" flex flex-col  justify-center text-white h-full  mx-auto px-4 sm:px-8 xl:px-35 lg:flex ">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Becon'24</h1>
+        <p class="text-lg md:text-2xl">Experience the magic of immersive design</p>
+      </div>
+
+
+      
+      
+      
+    </section> -->
+
+
+    <section class="relative mainContainer h-screen flex items-center overflow-hidden">
+      <!-- Video Background -->
+      <div class="absolute top-0 left-[-15%] w-[150%] h-full overflow-hidden">
+          <video autoplay muted loop class="w-full h-full object-cover md:object-contain md:left-0">
+              <source src="./images/logo/backvideo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+
+      <div class="absolute inset-0 z-5 h-[110%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 11, 27, 0.48) 0%, rgb(0, 11, 27) 58%, rgb(0, 11, 27) 74%, rgba(0, 11, 27, 1) 100%);"></div>
+
+
+    
+      <div class=" w-full flex justify-start  top-[100px]">
+       
+        <object type="image/svg+xml" data="./images/logo/2svg.svg" class=" animated-svg first-svg lg:pl-[120px] pl-4 w-1/2 h-auto md:w-1/3 lg:w-1/2 md:mt-4 ">
+            Your browser does not support SVGs
+        </object>
+        <object type="image/svg+xml" data="./images/logo/1svg.svg" class="hidden animated-svg second-svg lg:pl-[120px] pl-4 w-1/2 h-auto md:w-1/3 lg:w-1/2 md:mt-4 ">
+          Your browser does not support SVGs
+      </object>
+
+      </div>
+  
+      
+ 
+  
+
+  </section>
+  
+
+    <!-- ===== Hero Section End ===== -->
+
+
+    
+
+    <!-- ===== Custom Section Start ===== -->
+    <section id = "aboutus" class="py-16 bg-dark relative">
+      <div class="container mx-auto px-4">
+        <div class="relative">
+    
+          <div class="absolute top-72 left-1/2 transform -translate-x-1/2 w-64 h-64 md:w-64 md:h-64 rounded-full z-0" style="background: radial-gradient(circle, #00337C,  #03C988);"></div>
+    
+   
+          <div class="relative flex flex-col md:flex-row md:space-x-12 z-10">
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6 mb-8 md:mb-0">
+              <object type="image/svg+xml" data="./images/logo/About us.svg" class="   w-1/2 h-auto md:w-1/3 lg:w-1/2 md:mt-4 ">
+                Your browser does not support SVGs
+            </object>
+              <p class="text-grey text-justify">
+                BECon'25, organized by the Entrepreneurship Development Cell (eDC) of IIT Delhi, is India's premier student-led E-Summit dedicated to empowering the next generation of innovators and entrepreneurs. Each year, BECon brings together visionary leaders, industry experts, and aspiring changemakers from across the nation.              </p>
+            </div>
+            <div class="w-1/3 md:w-1/2">
+              <img src="./images/logo/about1.png" alt="Team discussion" class="rounded-3xl shadow-lg w-full">
+              <div class="absolute rounded-3xl inset-0 z-5 h-[100%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 11, 27, 0.48) 0%, rgba(0, 11, 27, 0.771) 58%, rgba(0, 11, 27, 0.795) 74%, rgba(0, 11, 27, 0.762) 100%);"></div>
+
+            </div>
+          </div>
+    
+       
+          <div class="mt-12 flex flex-col md:flex-row md:space-x-12 z-10">
+            <div class="w-full md:w-1/2 order-2 md:order-1 rounded-3xl">
+              <img src="./images/logo/about3.jpg" alt="Podcast interview" class="rounded-3xl shadow-lg w-full">
+              <div class=" rounded-3xl absolute inset-0 z-5 h-[100%] " style="background: radial-gradient(circle at 60% 45%, rgba(0, 11, 27, 0.48) 0%, rgba(0, 11, 27, 0.661) 58%, rgba(0, 11, 27, 0.768) 74%, rgba(0, 11, 27, 0.883) 100%);"></div>
+
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6 order-1 md:order-2">
+              <object type="image/svg+xml" data="./images/logo/our mission.svg" class="   w-1/2 h-auto md:w-1/3 lg:w-1/2 md:mt-4 ">
+                Your browser does not support SVGs
+            </object>
+              <p class="text-grey text-justify">
+                Our mission is to inspire and equip young entrepreneurs to create groundbreaking solutions that address sustainability and innovation. Through BECon'25, we aim to bridge the gap between academia, industry, and policymakers, providing a unique platform where students can network, learn, and innovate              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    
+    
+    <!-- ===== Custom Section End ===== -->
+
+
+
+    <!-- ====== Features Section Start -->
+    <section id="features" class="wow fadeInUp relative overflow-hidden lg:pt-17.5 xl:pt-22.5">
+
+
+
+      <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
+        <!-- bg circles -->
+        <div class="relative top-18">
+          <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden -my-55">
+            <div class="absolute left-1/2 -translate-x-1/2 top-0">
+              <img loading="lazy" src="./images/blur/blur-13.svg" alt="blur" class="max-w-none" />
+            </div>
+            <div class="absolute left-1/2 -translate-x-1/2 top-0">
+              <img loading="lazy" src="./images/blur/blur-14.svg" alt="blur" class="max-w-none" />
+            </div>
+            <div class="absolute left-1/2 -translate-x-1/2 top-0">
+              <img loading="lazy" src="./images/blur/blur-15.svg" alt="blur" class="max-w-none" />
+            </div>
+          </div>
+          <div
+            class="max-w-[830px] w-full h-[830px] rounded-full bg-dark absolute left-1/2 -translate-x-1/2 top-0 pricing-circle">
+          </div>
+
+          <div class="max-w-[482px] w-full h-40 overflow-hidden absolute -z-1 -top-30 left-1/2 -translate-x-1/2">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+          </div>
+        </div>
+
+        <!-- grid row -->
+        <div class="flex justify-center gap-7.5 relative -z-1">
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+          <div class="max-w-[50px] w-full h-[250px] relative pricing-grid pricing-grid-border"></div>
+        </div>
+
+        <!-- section title -->
+        <div class="wow fadeInUp mb-17.5 -mt-24 text-center z-10 relative">
+          <h2 class="text-white text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
+            Key Features
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5">
+          <!-- Pricing item -->
+          <!-- <div
+            class=" rounded-3xl  relative z-20 overflow-hidden pt-12.5 pb-10 px-8 xl:px-10 pricing-item-border">
+            <h3 class="font-semibold text-heading-6 text-white mb-5.5">
+              Attendees
+            </h3>
+
+            <div class="flex items-center gap-3.5">
+              <h2 class="font-bold text-custom-1 text-sky-300">30K+</h2>
+            </div>
+
+            <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+              <span class="absolute left-0 bottom-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-16.svg" alt="blur" class="w-full" />
+              </span>
+              <span class="absolute left-0 top-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-17.svg" alt="blur" class="w-full" />
+              </span>
+            </div>
+          </div> -->
+
+          <div class="swiper-slide !w-auto">
+            <a  style="background: radial-gradient(circle at -30% 140%, rgba(8, 140, 97, 1.0) 0%, rgba(1, 22, 51, 1.0) 47%, rgba(0, 18, 43, 1) 88%);" class="overflow-hidden relative rounded-lg h-50 w-200 p-2 flex   cta-box-gradient bg-dark z-999"
+              target="_blank">
+              <h3 class="font-semibold text-heading-6 text-white mt-10 ml-7 mb-5.5">
+                Attendees
+              </h3>
+  
+              <div class="flex items-center gap-3.5">
+                <h2 class="font-bold text-custom-1 -ml-28 mt-10 text-sky-300">30K+</h2>
+              </div>
+              <!-- bg shapes -->
+              <span class="absolute bottom-0 left-0 -z-1"><img loading="lazy" src="./images/cta/grid.svg"
+                  alt="grid" /></span>
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-22.svg" alt="blur" class="max-w-none" />
+                </span>
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-23.svg" alt="blur" class="max-w-none" />
+                </span>
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-24.svg" alt="blur" class="max-w-none" />
+                </span>
+              </div>
+
+              <!-- stars -->
+              <div
+                class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
+                <div class="stars"></div>
+                <div class="stars2"></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Pricing item -->
+          <!-- <div
+            class="rounded-3xl  relative z-20 overflow-hidden pt-12.5 pb-10 px-8 xl:px-10 pricing-item-border">
+            <h3 class="font-semibold text-heading-6 text-white mb-5.5">
+              Startups
+            </h3>
+
+            <div class="flex items-center gap-3.5">
+              <h2 class="font-bold text-custom-1 text-sky-300">500+</h2>
+            </div>
+
+         
+            <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+              <span class="absolute left-0 bottom-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-16.svg" alt="blur" class="w-full" />
+              </span>
+              <span class="absolute left-0 top-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-17.svg" alt="blur" class="w-full" />
+              </span>
+            </div>
+          </div> -->
+          <div class="swiper-slide !w-auto">
+            <a style="background: radial-gradient(circle at -30% 140%, rgba(8, 140, 97, 1.0) 0%, rgba(1, 22, 51, 1.0) 47%, rgba(0, 18, 43, 1) 88%);" class="overflow-hidden relative rounded-lg h-50 w-200 p-2 flex  cta-box-gradient bg-dark z-999"
+              target="_blank">
+              <h3 class="font-semibold text-heading-6 text-white mt-10 ml-7 mb-5.5">
+                Startups
+              </h3>
+  
+              <div class="flex items-center gap-3.5">
+                <h2 class="font-bold text-custom-1 -ml-24 mt-10 text-sky-300">500+</h2>
+              </div>
+              <!-- bg shapes -->
+              <span class="absolute bottom-0 left-0 -z-1"><img loading="lazy" src="./images/cta/grid.svg"
+                  alt="grid" /></span>
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-22.svg" alt="blur" class="max-w-none" />
+                </span>
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-23.svg" alt="blur" class="max-w-none" />
+                </span>
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-24.svg" alt="blur" class="max-w-none" />
+                </span>
+              </div>
+
+              <!-- stars -->
+              <div
+                class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
+                <div class="stars"></div>
+                <div class="stars2"></div>
+              </div>
+            </a>
+          </div>
+          <!-- Pricing item -->
+          <!-- <div
+             style="opacity: 100%;"  class=" rounded-3xl  relative z-20 overflow-hidden pt-12.5 pb-10 px-8 xl:px-10 pricing-item-border">
+            <h3 class="font-semibold text-heading-6 text-white mb-5.5">
+              Events
+            </h3>
+
+            <div class="flex items-center gap-3.5">
+              <h2 class="font-bold text-custom-1 text-sky-300">30+</h2>
+            </div>
+
+        
+            <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+              <span class="absolute left-0 bottom-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-16.svg" alt="blur" class="w-full" />
+              </span>
+              <span class="absolute left-0 top-0 -z-1 w-full">
+                <img loading="lazy" src="./images/blur/blur-17.svg" alt="blur" class="w-full" />
+              </span>
+            </div>
+          </div> -->
+          <div class="swiper-slide !w-auto ">
+            <a style="background: radial-gradient(circle at -30% 140%, rgba(8, 140, 97, 1.0) 0%, rgba(1, 22, 51, 1.0) 47%, rgba(0, 18, 43, 1) 88%);" class="overflow-hidden relative rounded-lg h-50 w-200 p-2 flex   cta-box-gradient bg-dark z-999"
+              target="_blank">
+              <h3 class="font-semibold text-heading-6 text-white mt-10 ml-7 mb-5.5">
+                Events
+              </h3>
+  
+              <div class="flex items-center gap-3.5">
+                <h2 class="font-bold text-custom-1 -ml-19 mt-10 text-sky-300">30+</h2>
+              </div>
+              <!-- bg shapes -->
+              <span class="absolute bottom-0 left-0 -z-1"><img loading="lazy" src="./images/cta/grid.svg"
+                  alt="grid" /></span>
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-22.svg" alt="blur" class="max-w-none" />
+                </span>
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-23.svg" alt="blur" class="max-w-none" />
+                </span>
+                <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+                  <img loading="lazy" src="./images/blur/blur-24.svg" alt="blur" class="max-w-none" />
+                </span>
+              </div>
+
+              <!-- stars -->
+              <div
+                class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
+                <div class="stars"></div>
+                <div class="stars2"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Features Section End -->
+
+
+    <!-- ===== Custom Section Start ===== -->
+    <section id="custom1" class=" overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5">
+      <div class="max-w-[1222px] mx-auto px-4 sm:px-8 xl:px-0">
+
+        <div class="wow fadeInUp mb-17.5 text-center ">
+          <object type="image/svg+xml" data="./images/logo/Glimpses of last year.svg" class=" m-auto  w-1/2 h-auto md:w-1/3 lg:w-1/2 md:mt-4 ">
+            Your browser does not support SVGs
+        </object>
+        </div>        
+        <!-- First Image Left, Text Right -->
+
+      </div>
+    </section>
+    <!-- ===== Custom Section End ===== -->
+
+
+    
+
+    
+    <section class="content-section" data-scroll>
+      <figure class="figure"><video autoplay muted loop>
+        <source src="./images/video/last1.mp4" type="video/mp4" >
+
+        
+  </video></figure>
+      <div class="content">
+        <header class="header">
+          <!-- <div class="subheading">All-Old Techniques</div> -->
+          <h2 class="heading">ANASTOMOSIS          </h2>
+        </header>
+        <p class="paragraph">
+          <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nisi illum rem recusandae. Tempore consequuntur nihil cumque quis nam deserunt earum atque et ullam facere accusamus cum natus, autem numquam. -->
+        </p>
+      </div>
+    </section>
+    
+    <!-- <section class="content-section" data-scroll>
+      <figure class="figure"><video autoplay muted loop>
+        <source src="./images/video/11.mp4" type="video/mp4" >
+
+        
+  </video></figure>
+      <div class="content">
+        <header class="header">
+          <h2 class="heading">Regional</h2>
+        </header>
+        <p class="paragraph">
+        </p>
+      </div>
+    </section> -->
+    
+    <section class="content-section" data-scroll>
+      <figure class="figure"><video autoplay muted loop>
+        <source src="./images/video/22.mp4" type="video/mp4" >
+
+        
+  </video></figure>
+      <div class="content">
+        <header class="header">
+          <!-- <div class="subheading">All-Old Techniques</div> -->
+          <h2 class="heading">BECon’24</h2>
+        </header>
+        <p class="paragraph">
+          <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nisi illum rem recusandae. Tempore consequuntur nihil cumque quis nam deserunt earum atque et ullam facere accusamus cum natus, autem numquam. -->
+        </p>
+      </div>
+    </section>
+    
+
+
+
+
+    <!-- ===== Speakers Section Start ===== -->
+    <section id="speakers" class="wow fadeInUp relative overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5">
+      <div class="max-w-[1222px] mx-auto px-4 sm:px-8 xl:px-0">
+        <!-- Section Title -->
+        <div class="wow fadeInUp mb-17.5 text-center">
+          <object type="image/svg+xml" data="./images/logo/Past Speakers.svg" class=" m-auto  w-1/2 h-auto md:w-1/4 lg:w-1/3 md:mt-4 ">
+            Your browser does not support SVGs
+        </object>
+        </div>
+
+        <div class="relative">
+          <div
+            class="features-row-border rotate-90 w-1/2 h-[1px] absolute top-1/2 left-1/2 -translate-y-1/2 lg:-translate-x-1/3 lg:left-1/4 hidden lg:block">
+          </div>
+          <div
+            class="features-row-border rotate-90 w-1/2 h-[1px] absolute top-1/2 right-1/2 -translate-y-1/2 lg:right-[8.3%] hidden lg:block">
+          </div>
+
+          <!--=== Features Row ===-->
+          <div class="flex flex-wrap justify-center">
+            <!-- Features Item -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+              <span
+                class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+              <div class="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                <span class="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                  <img loading="lazy" src="./images/speakers/nitin-gadkari.webp" alt="icon"
+                    class="h-50 w-50 rounded-full" />
+                </span>
+                <h4 class="font-semibold text-lg text-white my-2">
+                  Nitin Gadkari
+                </h4>
+                <p class="font-medium">
+                  Hon'ble Minister of Road Transport & Highways of India
+                </p>
+              </div>
+            </div>
+
+            <!-- Features Item -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+              <span
+                class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+              <div class="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                <span class="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                  <img loading="lazy" src="./images/speakers/raghuram-rajan.jpeg" alt="icon"
+                    class="h-50 w-50 rounded-full" />
+                </span>
+                <h4 class="font-semibold text-lg text-white my-2">
+                  Raghuram Rajan
+                </h4>
+                <p class="font-medium">
+                  Professor, Chicago's Booth University, Ex Governor RBI
+                </p>
+              </div>
+            </div>
+
+            <!-- Features Item -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+              <span
+                class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+              <div class="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                <span class="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                  <img loading="lazy" src="./images/speakers/vijay-shekhar-sharma.jpg" alt="icon"
+                    class="h-50 w-50 rounded-full" />
+                </span>
+                <h4 class="font-semibold text-lg text-white my-2">
+                  Vijay Shekhar Sharma
+                </h4>
+                <p class="font-medium">Founder, PayTM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-row-border w-full h-[1px]"></div>
+
+          <!--=== Features Row ===-->
+          <div class="flex flex-wrap justify-center">
+            <!-- Features Item -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+              <span
+                class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+              <div class="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                <span class="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                  <img loading="lazy" src="./images/speakers/anurag-kashyap.jpg" alt="icon"
+                    class="h-50 w-50 rounded-full" />
+                </span>
+                <h4 class="font-semibold text-lg text-white my-2">
+                  Anurag Kashyap
+                </h4>
+                <p class="font-medium">Movie Director</p>
+              </div>
+            </div>
+
+            <!-- Features Item -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+              <span
+                class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+              <div class="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                <span class="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                  <img loading="lazy" src="./images/speakers/sanjeev-bikhchandani.jpg" alt="icon"
+                    class="h-50 w-50 rounded-full" />
+                </span>
+                <h4 class="font-semibold text-lg text-white my-2">
+                  Sanjeev Bikhchandani
+                </h4>
+                <p class="font-medium">Founder, InfoEdge</p>
+              </div>
+            </div>
+
+            <!-- Features Item -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 group relative overflow-hidden">
+              <span
+                class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
+              <div class="text-center py-8 sm:py-10 xl:py-15 px-4 lg:px-8 xl:px-13">
+                <span class="relative rounded-full inline-flex items-center justify-center mb-8 mx-auto">
+                  <img loading="lazy" src="./images/speakers/vikram-gupta.jpg" alt="icon"
+                    class="h-50 w-50 rounded-full" />
+                </span>
+                <h4 class="font-semibold text-lg text-white my-2">
+                  Vikram Gupta
+                </h4>
+                <p class="font-medium">Founder, IvyCap Ventures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inset-x-0 flex justify-center  pointer-events-none mt-10">
+          <button onclick="routerRedirect('speaker.html')"
+            class="button-border-gradient hover:button-gradient-hover relative text-sm text-green-500 font-semibold px-4.5 py-3 rounded-lg pointer-events-auto flex mx-auto ease-in duration-300">
+            Show more...
+          </button>
+        </div>
+      </div>
+    </section>
+ 
+ 
+    <!-- ===== Speakers Section End ===== -->
+
+
+
+
+    <!-- ====== Sponsors Section Start -->
+    <section id="sponsors " class="wow fadeInUp relative overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5">
+      <div class="max-w-[1104px] mx-auto px-4 sm:px-8 xl:px-0 mb-2">
+        <div class="wow fadeInUp text-center mb-20">
+          <object type="image/svg+xml" data="./images/logo/Auto expo.svg" class=" m-auto  w-1/2 h-auto md:w-1/4 lg:w-1/3 md:mt-4 ">
+            Your browser does not support SVGs
+        </object>
+        </div>
+        <!-- <div  class="we-carousel sm:px-8  md:pt-0 md:-mt-12 flex items-center justify-center min-h-screen">
+          <div class="we-arrow left">&#10094;</div>
+          <div class="we-card-container">
+            <div class="we-card"> 
+        <img src="./images/auto/f.jpg" alt="Girl in a jacket" >
+      
+            </div>
+
+            <div class="we-card"> 
+           <img src="./images/auto/c.jpg" >
+            </div>
+            <div class="we-card"> 
+         <img src="./images/auto/d.jpg" alt="Girl in a jacket" >
+            </div>
+            <div class="we-card"> 
+       <img src="./images/auto/e.jpg" alt="Girl in a jacket" >
+            </div>
+            <div class="we-card"> 
+       <img src="./images/auto/a.jpg" alt="Girl in a jacket" >
+            </div>
+            <div class="we-card"> 
+          <img src="./images/auto/g.jpg" alt="Girl in a jacket" >
+            </div>
+
+          </div>
+          <div class="we-arrow right">&#10095;</div>
+      </div> -->
+      <!-- <div class="we-carousel sm:px-8 md:pt-0 md:-mt-12 flex items-center justify-center min-h-screen relative">
+        <div class="we-arrow left absolute left-0">&#10094;</div>
+    
+        <div class="we-card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 max-w-full sm:max-w-sm md:max-w-3xl lg:max-w-4xl">
+            <div class="we-card">
+                <img style="  width: 100%; height: auto;" src="./images/auto/f.jpg" alt="Girl in a jacket" class="w-full h-auto object-cover rounded-md">
+            </div>
+            <div class="we-card">
+                <img src="./images/auto/c.jpg" alt="Image description" class="w-full h-auto object-cover rounded-md">
+            </div>
+            <div class="we-card">
+                <img src="./images/auto/d.jpg" alt="Image description" class="w-full h-auto object-cover rounded-md">
+            </div>
+            <div class="we-card">
+                <img src="./images/auto/e.jpg" alt="Image description" class="w-full h-auto object-cover rounded-md">
+            </div>
+            <div class="we-card">
+                <img src="./images/auto/a.jpg" alt="Image description" class="w-full h-auto object-cover rounded-md">
+            </div>
+            <div class="we-card">
+                <img src="./images/auto/g.jpg" alt="Image description" class="w-full h-auto object-cover rounded-md">
+            </div>
+        </div>
+    
+        <div class="we-arrow right absolute right-0">&#10095;</div>
+    </div> -->
+    
+    <div style="padding-bottom: 100px;" class="we-carousel sm:px-8 md:pt-0 md:-mt-12 flex flex-col items-center justify-center min-h-screen space-y-6">
+      <div class="we-arrow left absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl cursor-pointer">&#10094;</div>
+      
+      <div class="we-card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-screen-lg px-4 rounded-2xl">
+          <div class="we-card rounded-[80px]">
+              <img src="./images/auto/f.jpg" alt="Image 1" class="w-full h-auto object-cover rounded-[80px] ">
+          </div>
+          <div class="we-card rounded-[80px]">
+              <img src="./images/auto/c.jpg" alt="Image 2" class="w-full h-auto object-cover rounded-[80px] ">
+          </div>
+          <div class="we-card rounded-[80px]">
+              <img src="./images/auto/d.jpg" alt="Image 3" class="w-full h-auto object-cover  rounded-[80px]">
+          </div>
+          <div class="we-card rounded-[80px]">
+              <img src="./images/auto/e.jpg" alt="Image 4" class="w-full h-auto object-cover rounded-[80px]">
+          </div>
+          <div class="we-card rounded-[80px]">
+              <img src="./images/auto/a.jpg" alt="Image 5" class="w-full h-auto object-cover rounded-[80px] ">
+          </div>
+          <div class="we-card rounded-[80px]">
+              <img src="./images/auto/g.jpg" alt="Image 6" class="w-full h-auto object-cover rounded-[80px]">
+          </div>
+      </div>
+  
+      <div class="we-arrow right absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl cursor-pointer">&#10095;</div>
+    </div>
+  
+      </div>
+
+
+      
+
+
+    </section>
+    <section id="sponsors" class="wow fadeInUp relative overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5">
+      <div class="max-w-[1104px] mx-auto px-4 sm:px-8 xl:px-0 mb-2">
+        <div class="wow fadeInUp text-center mb-20">
+          <object type="image/svg+xml" data="./images/logo/Startup expo.svg " class=" m-auto  w-1/2 h-auto md:w-1/4 lg:w-1/3 md:mt-4 ">
+            Your browser does not support SVGs
+        </object>
+        </div>
+        <div style="padding-bottom: 100px;"  class="we-carousel1 sm:px-8 md:pt-0 md:-mt-12 flex flex-col items-center justify-center min-h-screen space-y-6">
+          <div class="we-arrow left absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl cursor-pointer">&#10094;</div>
+          
+          <div class="we-card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-screen-lg px-4 rounded-2xl">
+              
+            <div class="we-card1 rounded-[80px]"> 
+        <img src="./images/startup-expo/4.jpg" alt="Girl in a jacket" class="w-full h-auto object-cover rounded-[80px]" >
+      
+            </div>
+            <div class="we-card1 rounded-[80px]"> 
+       <img src="./images/startup-expo/3.jpg" alt="Girl in a jacket" class="w-full h-auto object-cover rounded-[80px]">
+            </div>
+            <div class="we-card1 rounded-[80px]"> 
+           <img src="./images/startup-expo/2.jpg" class="w-full h-auto object-cover rounded-[80px]">
+            </div>
+            <div class="we-card1 rounded-[80px]"> 
+         <img src="./images/startup-expo/5.jpg" alt="Girl in a jacket" class="w-full h-auto object-cover rounded-[80px]">
+            </div>
+            <div class="we-card1 rounded-[80px]"> 
+       <img src="./images/startup-expo/4.jpg" alt="Girl in a jacket" class="w-full h-auto object-cover rounded-[80px]"">
+            </div>
+
+          </div>
+          <div class="we-arrow right absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl cursor-pointer">&#10095;</div>
+        </div>
+      </div>
+
+
+      
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ====== Events Section Start -->
+    <section id="events" class="wow fadeInUp relative overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5">
+      <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
+        <!-- section title -->
+        <div class="wow fadeInUp mb-17.5 text-center">
+          <object type="image/svg+xml" data="./images/logo/Past Events.svg" class=" m-auto  w-1/2 h-auto md:w-1/4 lg:w-1/3 md:mt-4 ">
+            Your browser does not support SVGs
+        </object>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-7.5">
+          <div
+            class="wow fadeInUp group bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg">
+            <div class="overflow-hidden rounded-xl">
+              <img loading="lazy" src="./images/events/try6.png" alt="image"
+                class="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
+            </div>
+
+            <div class="p-4 h-60 flex flex-col justify-between">
+              <h4 class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+                Inauguration
+              </h4>
+              <p class="font-medium">
+                Inauguration of IIT Delhi's Annual Business and
+                Entrepreneurship Conclave.
+              </p>
+
+              <div class="flex items-center gap-4.5 flex-wrap">
+                <span class="text-sm font-medium">Dogra Hall</span>
+                <span class="text-sm font-medium">31st Jan</span>
+                <span class="text-sm font-medium">6pm-7pm</span>
+              </div>
+
+              <div class="flex items-center gap-4.5 flex-wrap">
+                <span class="font-medium">Exclusively for IIT Delhi Students!</span>
+              </div>
+
+              <!-- <button disabled onclick="registerForEvent('Inaugration')" id="InaugrationRegisterButton"
+                class="button-border-gradient relative rounded-lg text-sky-300 text-sm py-2 px-4.5   hover:button-gradient-hover hover:shadow w-full mt-4 flex justify-center items-center gap-1">
+                <span role="status" id="Inaugration">
+                  <svg aria-hidden="true"
+                    class="inline w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor" />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="#0ea5e9" />
+                  </svg>
+                  <span class="sr-only">Loading...</span>
+                </span>
+
+                <span>Registrations Closed</span>
+              </button> -->
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp group bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg relative">
+            <div class="overflow-hidden rounded-xl">
+              <img loading="lazy" src="./images/events/try4.png" alt="image"
+                class="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
+            </div>
+
+            <div class="p-4 h-60 flex flex-col justify-between">
+              <h4 class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+                Old School, New Rules
+              </h4>
+              <p class="font-medium">
+                Revamping Traditional Businesses for Modern Growth
+              </p>
+
+              <div class="flex items-center gap-4.5 flex-wrap">
+                <span class="text-sm font-medium">4th Feb</span>
+                <span class="text-sm font-medium">12:15-1:15PM</span>
+                <span class="text-sm font-medium">Seminar Hall</span>
+              </div>
+
+              <!-- <button onclick="registerForEvent('OldSchoolNewRules')" id="OldSchoolNewRulesRegisterButton"
+                class="button-border-gradient relative rounded-lg text-sky-300 text-sm py-2 px-4.5   hover:button-gradient-hover hover:shadow w-full mt-4 flex justify-center items-center gap-1">
+                <span role="status" id="OldSchoolNewRules">
+                  <svg aria-hidden="true"
+                    class="inline w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor" />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="#0ea5e9" />
+                  </svg>
+                  <span class="sr-only">Loading...</span>
+                </span>
+
+                <span>Register</span>
+              </button> -->
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp group bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg relative">
+            <div class="overflow-hidden rounded-xl">
+              <img loading="lazy" src="./images/events/try2.png" alt="image"
+                class="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
+            </div>
+
+            <div class="p-4 h-60 flex flex-col justify-between">
+              <h4 class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+                The IIT Delhi Effect
+              </h4>
+              <p class="font-medium">
+                Unravelling the Secret to Producing Most Entrepreneurs
+              </p>
+
+              <div class="flex items-center gap-4.5 flex-wrap">
+                <span class="text-sm font-medium">4th Feb</span>
+                <span class="text-sm font-medium">3-4PM</span>
+                <span class="text-sm font-medium">Dogra Hall</span>
+              </div>
+
+              <!-- <button onclick="registerForEvent('TheIitdEffect')" id="TheIitdEffectRegisterButton"
+                class="button-border-gradient relative rounded-lg text-sky-300 text-sm py-2 px-4.5   hover:button-gradient-hover hover:shadow w-full mt-4 flex justify-center items-center gap-1">
+                <span role="status" id="TheIitdEffect">
+                  <svg aria-hidden="true"
+                    class="inline w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor" />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="#0ea5e9" />
+                  </svg>
+                  <span class="sr-only">Loading...</span>
+                </span>
+
+                <span>Register</span>
+              </button> -->
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp group bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg relative">
+            <div class="overflow-hidden rounded-xl">
+              <img loading="lazy" src="./images/events/try5.png" alt="image"
+                class="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
+            </div>
+
+            <div class="p-4 h-60 flex flex-col justify-between">
+              <h4 class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+                Fireside Chat with Amit Kumar Aggarwal
+              </h4>
+              <p class="font-medium">Co-Founder & CEO NoBroker</p>
+
+              <div class="flex items-center gap-4.5 flex-wrap">
+                <span class="text-sm font-medium">4th Feb</span>
+                <span class="text-sm font-medium">2PM</span>
+                <span class="text-sm font-medium">Dogra Hall</span>
+              </div>
+<!-- 
+              <button onclick="registerForEvent('FireChatWithAmitAggarwal')" id="FireChatWithAmitAggarwalRegisterButton"
+                class="button-border-gradient relative rounded-lg text-sky-300 text-sm py-2 px-4.5   hover:button-gradient-hover hover:shadow w-full mt-4 flex justify-center items-center gap-1">
+                <span role="status" id="FireChatWithAmitAggarwal">
+                  <svg aria-hidden="true"
+                    class="inline w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor" />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="#0ea5e9" />
+                  </svg>
+                  <span class="sr-only">Loading...</span>
+                </span>
+
+                <span>Register</span>
+              </button> -->
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp group bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg relative">
+            <div class="overflow-hidden rounded-xl">
+              <img loading="lazy" src="./images/events/try1.png" alt="image"
+                class="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
+            </div>
+
+            <div class="p-4 h-60 flex flex-col justify-between">
+              <h4 class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+                Talk with Dr. Kiran Bedi
+              </h4>
+              <p class="font-medium">
+                First Femal I.P.S. Officer, Founder at India Vision Foundation
+              </p>
+
+              <div class="flex items-center gap-4.5 flex-wrap">
+                <span class="text-sm font-medium">3rd Feb</span>
+                <span class="text-sm font-medium">11AM</span>
+                <span class="text-sm font-medium">Dogra Hall</span>
+              </div>
+
+              <!-- <button onclick="registerForEvent('TalkWithKiranBedi')" id="TalkWithKiranBediRegisterButton"
+                class="button-border-gradient relative rounded-lg text-sky-300 text-sm py-2 px-4.5   hover:button-gradient-hover hover:shadow w-full mt-4 flex justify-center items-center gap-1">
+                <span role="status" id="TalkWithKiranBedi">
+                  <svg aria-hidden="true"
+                    class="inline w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor" />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="#0ea5e9" />
+                  </svg>
+                  <span class="sr-only">Loading...</span>
+                </span>
+
+                <span>Register</span>
+              </button> -->
+            </div>
+          </div>
+
+          <div
+            class="wow fadeInUp group bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg relative">
+            <div class="overflow-hidden rounded-xl">
+              <img loading="lazy" src="./images/events/try3.png" alt="image"
+                class="ease-linear w-full duration-500 scale-100 group-hover:scale-125 h-80" />
+            </div>
+
+            <div class="p-4 h-60 flex flex-col justify-between">
+              <h4 class="text-white font-semibold text-xl ease-in duration-300 hover:opacity-80">
+                She Means Business
+              </h4>
+              <p class="font-medium">
+                Navigating the startup world as a woman
+              </p>
+
+              <div class="flex items-center gap-4.5 flex-wrap">
+                <span class="text-sm font-medium">3rd Feb</span>
+                <span class="text-sm font-medium">2pm</span>
+                <span class="text-sm font-medium">Dogra Hall</span>
+              </div>
+
+              <!-- <button onclick="registerForEvent('SheMeansBusiness')" id="SheMeansBusinessRegisterButton"
+                class="button-border-gradient relative rounded-lg text-sky-300 text-sm py-2 px-4.5   hover:button-gradient-hover hover:shadow w-full mt-4 flex justify-center items-center gap-1">
+                <span role="status" id="SheMeansBusiness">
+                  <svg aria-hidden="true"
+                    class="inline w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300"
+                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor" />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="#0ea5e9" />
+                  </svg>
+                  <span class="sr-only">Loading...</span>
+                </span>
+
+                <span>Register</span>
+              </button> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="inset-x-0 flex justify-center
+         pointer-events-none mb-16 mt-16">
+          <button onclick="routerRedirect('event.html')"
+            class="button-border-gradient hover:button-gradient-hover relative text-sm text-green-500 font-semibold px-4.5 py-3 rounded-lg pointer-events-auto flex mx-auto ease-in duration-300">
+            Show more...
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Events Section End -->
+
+    <!-- ===== Merchandise Section Start ===== -->
+
+    <!-- ===== Merchandise Section End ===== -->
+
+    <!-- ====== Sponsors Section Start -->
+
+    <!-- ====== Sponsors Section End -->
+
+    <!-- ===== About Section Start ===== -->
+
+    <!-- ===== About Section End ===== -->
+
+
+    <!-- ====== Startup Expo Section Start -->
+
+    <!-- ====== Startup Expo Section End -->
+
+<!-- Beautiful Register Button with Upward Translation -->
+
+
+
+  </main>
+
+  <!-- ===== Footer Start ===== -->
+  <include src="./partials/footer.html" />
+  <!-- ===== Footer End ===== -->
+
+  <!-- ====== Back To Top Start ===== -->
+  <include src="./partials/scrolltop.html" />
+  <!-- ====== Back To Top End ===== -->
+
+  <!-- Javascripts files start -->
+  <script src="./js/loginLogout.js"></script>
+  <script src="./js/heroButton.js"></script>
+  <script src="./js/routerRedirect.js"></script>
+  <script src="./js/event.js"></script>
+  <script src="./js/multiCardCarousels.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+
+
+<script>$(document).ready(function () {
+  let currentCardIndex = 0;
+  const cards = $('.we-card');
+  const totalCards = cards.length;
+  let autoSlide;
+
+  function updateCarousel() {
+    cards.removeClass('active prev-1 next-1 prev-2 next-2 prev-3 next-3');
+    $(cards[currentCardIndex]).addClass('active');
+
+    const prevIndex_1 = (currentCardIndex - 1 + totalCards) % totalCards;
+    const nextIndex_1 = (currentCardIndex + 1) % totalCards;
+    const prevIndex_2 = (currentCardIndex - 2 + totalCards) % totalCards;
+    const nextIndex_2 = (currentCardIndex + 2) % totalCards;
+    const prevIndex_3 = (currentCardIndex - 3 + totalCards) % totalCards;
+    const nextIndex_3 = (currentCardIndex + 3) % totalCards;
+
+    $(cards[prevIndex_1]).addClass('prev-1');
+    $(cards[nextIndex_1]).addClass('next-1');
+    $(cards[prevIndex_2]).addClass('prev-2');
+    $(cards[nextIndex_2]).addClass('next-2');
+    $(cards[prevIndex_3]).addClass('prev-3');
+    $(cards[nextIndex_3]).addClass('next-3');
+  }
+
+  function startAutoSlide() {
+    autoSlide = setInterval(() => {
+      currentCardIndex = (currentCardIndex + 1) % totalCards;
+      updateCarousel();
+    }, 3000); // Change slide every 3 seconds
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
+  }
+
+  updateCarousel();
+  startAutoSlide(); // Start the automatic sliding
+
+  $('.right').click(function () {
+    currentCardIndex = (currentCardIndex + 1) % totalCards;
+    updateCarousel();
+    stopAutoSlide();
+    startAutoSlide(); // Restart auto slide after manual interaction
+  });
+
+  $('.left').click(function () {
+    currentCardIndex = (currentCardIndex - 1 + totalCards) % totalCards;
+    updateCarousel();
+    stopAutoSlide();
+    startAutoSlide(); // Restart auto slide after manual interaction
+  });
+
+  // Pause the automatic sliding when the mouse is over the carousel and resume when it leaves
+  $('.we-carousel').on('mouseenter', stopAutoSlide);
+  $('.we-carousel').on('mouseleave', startAutoSlide);
+});</script>
+
+
+
+<script>$(document).ready(function () {
+  let currentCardIndex = 0;
+  const cards = $('.we-card1');
+  const totalCards = cards.length;
+  let autoSlide;
+
+  function updateCarousel() {
+    cards.removeClass('active prev-1 next-1 prev-2 next-2 prev-3 next-3');
+    $(cards[currentCardIndex]).addClass('active');
+
+    const prevIndex_1 = (currentCardIndex - 1 + totalCards) % totalCards;
+    const nextIndex_1 = (currentCardIndex + 1) % totalCards;
+    const prevIndex_2 = (currentCardIndex - 2 + totalCards) % totalCards;
+    const nextIndex_2 = (currentCardIndex + 2) % totalCards;
+    const prevIndex_3 = (currentCardIndex - 3 + totalCards) % totalCards;
+    const nextIndex_3 = (currentCardIndex + 3) % totalCards;
+
+    $(cards[prevIndex_1]).addClass('prev-1');
+    $(cards[nextIndex_1]).addClass('next-1');
+    $(cards[prevIndex_2]).addClass('prev-2');
+    $(cards[nextIndex_2]).addClass('next-2');
+    $(cards[prevIndex_3]).addClass('prev-3');
+    $(cards[nextIndex_3]).addClass('next-3');
+  }
+
+  function startAutoSlide() {
+    autoSlide = setInterval(() => {
+      currentCardIndex = (currentCardIndex + 1) % totalCards;
+      updateCarousel();
+    }, 3000); // Change slide every 3 seconds
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
+  }
+
+  updateCarousel();
+  startAutoSlide(); // Start the automatic sliding
+
+  $('.right').click(function () {
+    currentCardIndex = (currentCardIndex + 1) % totalCards;
+    updateCarousel();
+    stopAutoSlide();
+    startAutoSlide(); // Restart auto slide after manual interaction
+  });
+
+  $('.left').click(function () {
+    currentCardIndex = (currentCardIndex - 1 + totalCards) % totalCards;
+    updateCarousel();
+    stopAutoSlide();
+    startAutoSlide(); // Restart auto slide after manual interaction
+  });
+
+  // Pause the automatic sliding when the mouse is over the carousel and resume when it leaves
+  $('.we-carousel1').on('mouseenter', stopAutoSlide);
+  $('.we-carousel1').on('mouseleave', startAutoSlide);
+});</script>
+
+
+<script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+const firstSvg = document.querySelector('.first-svg');
+const secondSvg = document.querySelector('.second-svg');
+
+gsap.to(firstSvg, {
+        x: '50%', 
+        filter: 'blur(30px)',
+        scrollTrigger: {
+            trigger: '.mainContainer',
+            start: 'top top',
+            end: '+=20%', 
+            scrub: true, 
+            onLeave: () => {
+                firstSvg.classList.add('hidden'); 
+                secondSvg.classList.remove('hidden'); 
+            }
+        }
+    });
+
+    gsap.fromTo(secondSvg, {
+        x: '18%',
+        filter: 'blur(35px)',
+    }, {
+        x: '95%',
+        filter: 'blur(0px)',
+        scrollTrigger: {
+            trigger: '.mainContainer',
+            start: '50 top',
+            end: '+=60%',
+            scrub: true,
+            onLeaveBack: () => {
+                secondSvg.classList.add('hidden');
+                firstSvg.classList.remove('hidden');
+            }
+        }
+    });
+    
+</script>
+
+
+  <!-- Javscript files end -->
+</body>
+
+</html>

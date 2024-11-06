@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4C4P209W9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-S4C4P209W9');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BECon | 404</title>
+</head>
+
+<body x-data="{ page: '404', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
+  <!-- ===== Header Start ===== -->
+  <include src="./partials/header.html" />
+  <!-- ===== Header End ===== -->
+
+  <main>
+    <!-- ===== Breadcrumb Section Start ===== -->
+    <section class="relative z-10 pt-30 lg:pt-35 xl:pt-40 pb-18">
+      <!-- bg shapes -->
+      <div class="absolute top-25 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
+        <div class="w-full h-[1.24px] footer-bg-gradient"></div>
+        <div class="w-full h-[2.47px] footer-bg-gradient"></div>
+        <div class="w-full h-[3.71px] footer-bg-gradient"></div>
+        <div class="w-full h-[4.99px] footer-bg-gradient"></div>
+        <div class="w-full h-[6.19px] footer-bg-gradient"></div>
+        <div class="w-full h-[7.42px] footer-bg-gradient"></div>
+        <div class="w-full h-[8.66px] footer-bg-gradient"></div>
+        <div class="w-full h-[9.90px] footer-bg-gradient"></div>
+        <div class="w-full h-[13px] footer-bg-gradient"></div>
+      </div>
+      <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-dark/0 to-dark -z-1">
+      </div>
+
+    </section>
+    <!-- ===== Breadcrumb Section End ===== -->
+
+    <!-- ===== 404 Start ===== -->
+    <section class="pb-20 lg:pb-25 xl:pb-30 2xl:pb-[150px]">
+      <div class="wow fadeInUp mx-auto w-full max-w-[597px] text-center px-4 sm:px-8 lg:px-0" data-wow-delay="0.1s">
+        <h2 class="mb-5.5 text-heading-3 font-bold text-white">
+          Oops! Page Not Found.
+        </h2>
+        <p class="font-medium mb-9">
+          The page you are looking for is not available or has been moved. Try
+          a different page or go to homepage with the button below.
+        </p>
+        <button onclick="routerRedirect('index.html')"
+          class="bg-gradient-to-b from-sky-400 to-sky-700 inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80">
+          Go To Home
+        </button>
+      </div>
+    </section>
+    <!-- ===== 404 End ===== -->
+  </main>
+  <!-- ===== Footer Start ===== -->
+  <include src="./partials/footer.html" />
+  <!-- ===== Footer End ===== -->
+
+  <!-- ====== Back To Top Start ===== -->
+  <include src="./partials/scrolltop.html" />
+  <!-- ====== Back To Top End ===== -->
+
+  <!-- Javascripts files start -->
+  <script src="./js/loginLogout.js"></script>
+  <script src="./js/routerRedirect.js"></script>
+  <!-- Javscript files end -->
+</body>
+
+</html>
