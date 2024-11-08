@@ -211,7 +211,7 @@
           </button>
           </li>
 
-          <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
+          <!-- <li class="nav__menu lg:py-7" :class="{ 'lg:!py-4' : stickyMenu }">
             <button onclick="routerRedirect('moonshot.html')"
             @click="navigationOpen = false"
             class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
@@ -233,7 +233,7 @@
             class="relative text-white text-sm py-1.5 px-4 border border-transparent hover:text-white hover:nav-gradient">
             Startup Clinic
           </button>
-          </li>
+          </li> -->
         </ul>
       </nav>
 
@@ -297,7 +297,7 @@
       <!-- Video Background -->
       <div class="absolute top-0 left-[-15%] w-[150%] h-full overflow-hidden">
           <video autoplay muted loop class="w-full h-full object-cover md:object-contain md:left-0">
-              <source src="images/backvideo.mp4" type="video/mp4">
+              <source src="images/FINAL BECon'24 Aftermoviecom.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
       </div>
@@ -615,7 +615,7 @@
     
     <section class="content-section" data-scroll>
       <figure class="figure"><video autoplay muted loop>
-        <source src="images/last1.mp4" type="video/mp4" >
+        <source src="images/Sequence 01.mp4" type="video/mp4" >
 
         
   </video></figure>
@@ -632,7 +632,7 @@
     
     <!-- <section class="content-section" data-scroll>
       <figure class="figure"><video autoplay muted loop>
-        <source src="./images/video/11.mp4" type="video/mp4" >
+        <source src="./images/Sequence 01.mp4" type="video/mp4" >
 
         
   </video></figure>
@@ -647,7 +647,7 @@
     
     <section class="content-section" data-scroll>
       <figure class="figure"><video autoplay muted loop>
-        <source src="images/22.mp4" type="video/mp4" >
+        <source src="images/FINAL BECon'24 Aftermoviecom.mp4" type="video/mp4" >
 
         
   </video></figure>
@@ -1520,8 +1520,9 @@ gsap.to(firstSvg, {
         scrollTrigger: {
             trigger: '.mainContainer',
             start: '50 top',
-            end: '+=60%',
+            end: '+=90%',
             scrub: true,
+            // markers:true,
             onLeaveBack: () => {
                 secondSvg.classList.add('hidden');
                 firstSvg.classList.remove('hidden');
@@ -1536,3 +1537,4 @@ gsap.to(firstSvg, {
 <script defer src="bundle.js"></script></body>
 
 </html>
+
